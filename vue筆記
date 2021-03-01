@@ -1,0 +1,28 @@
+ctrl + shift + L //開啟Vue devTool
+ctrl + P //搜尋程式
+
+v-html 可插入html標籤
+v-model 雙向綁定
+v-on 縮寫為@
+v-bind 縮寫為:
+修飾符(ex:v-on:click.prevent=""、v-on:keyup.enter="")
+
+切換class:
+	:class="{'要加入的className' : 判斷式}"
+
+Methods 與 Computed 的使用情境
+	computed 只要資料變動就會觸發
+	大量資料時，會建議透過 methods
+
+Vue.component 元件化component是關鍵字
+	名稱可自行定義，也等於畫面上的標籤
+	元件化內的data須使用function
+	Vue.component('自定義名稱',{
+		data:function(){
+			return{
+				counter: 0
+			}
+		},
+		template:`// template是關鍵字
+		`
+	})
